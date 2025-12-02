@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eclipse Lunar Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader-overlay" class="loader-overlay">
+    <div class="loader">
+      <span class="loader-dot"></span>
+      <span class="loader-dot"></span>
+      <span class="loader-dot"></span>
+    </div>
+    <p class="loader-text">Carregando Eclipse Lunar Hub…</p>
+  </div>
+
+  <div id="app" class="hidden">
+
+    <header class="site-header">
+      <div class="brand">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135773.png" class="brand-icon">
+        <div>
+          <h1 id="typed-title" class="title"></h1>
+          <p class="subtitle">Plataforma profissional de scripts educacionais</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="filters">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="online">Online</button>
+      <button class="filter-btn" data-filter="offline">Offline</button>
+    </section>
+
+    <main class="scripts-grid" id="scripts-grid">
+      <!-- Gerado via JS -->
+    </main>
+
+    <footer class="footer">
+      <p>Créditos dos Scripts: <strong>CrimsonStrauss</strong></p>
+      <p>Site feito por <strong>Vessel</strong></p>
+      <button id="discordBtn" class="discord-btn">Discord</button>
+    </footer>
+
+  </div>
+
+  <!-- MODAL -->
+  <div id="offlineModal" class="modal">
+    <div class="modal-center">
+      <h2 id="modalTitle">Script Offline</h2>
+      <p id="modalMsg"></p>
+      <button id="modalClose" class="modal-btn">Fechar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
